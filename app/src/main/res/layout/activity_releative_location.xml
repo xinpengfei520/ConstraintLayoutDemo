@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLocationActivity">
+
+    <!-- Hello 相当于是起着参照物的作用 -->
+    <Button
+        android:id="@+id/Hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="在Hello下方,与Hello左对齐"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="@id/Hello"
+        app:layout_constraintTop_toBottomOf="@id/Hello" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="在Hello上方,与Hello居中对齐"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/Hello"
+        app:layout_constraintLeft_toLeftOf="@id/Hello"
+        app:layout_constraintRight_toRightOf="@id/Hello" />
+
+    <!-- baseline 对齐的是里面的文字 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="bottom"
+        android:text="baseline对齐"
+        android:textAllCaps="false"
+        app:layout_constraintBaseline_toBaselineOf="@id/Hello"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <!-- 这种对齐方式是真个View居中对齐，与里面的文字无关 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="bottom"
+        android:text="水平居中对齐"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/Hello"
+        app:layout_constraintLeft_toRightOf="@id/Hello"
+        app:layout_constraintTop_toTopOf="@id/Hello" />
+
+</android.support.constraint.ConstraintLayout>

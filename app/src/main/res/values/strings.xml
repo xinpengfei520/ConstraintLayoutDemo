@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Constraint-Layout-Demo</string>
+    <string name="title_activity_margin_property">MarginPropertyActivity</string>
+</resources>

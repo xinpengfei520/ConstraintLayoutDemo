@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSetRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置相对位置" />
+
+    <Button
+        android:id="@+id/btnSetCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置居中"
+        app:layout_constraintTop_toBottomOf="@id/btnSetRelative" />
+
+    <Button
+        android:id="@+id/btnSetMargin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置边距"
+        app:layout_constraintTop_toBottomOf="@id/btnSetCenter" />
+
+
+</android.support.constraint.ConstraintLayout>

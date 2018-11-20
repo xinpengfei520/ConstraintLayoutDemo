@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MarginPropertyActivity"
+    tools:showIn="@layout/activity_margin_property">
+
+    <Button
+        android:id="@+id/btnA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="B"
+        app:layout_constraintLeft_toRightOf="@id/btnA"
+        app:layout_goneMarginLeft="160dp" />
+
+    <Button
+        android:id="@+id/btnSetGone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="设置A为GONE"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/btnB" />
+
+</android.support.constraint.ConstraintLayout>
