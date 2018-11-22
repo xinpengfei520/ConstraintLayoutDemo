@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SizeActivity">
+
+    <!-- 此时设置的约束都不生效了 -->
+    <Button
+        android:id="@+id/btnMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="match_parent" />
+
+    <!-- 基于约束最终确定大小 -->
+    <Button
+        android:id="@+id/btn0dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="width = 0dp 基于约束最终确定大小"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMatch" />
+
+    <Button
+        android:id="@+id/btnMinWidth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="240dp"
+        android:text="minWidth设置为240dp"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn0dp" />
+
+    <Button
+        android:id="@+id/btnConWidTrue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="constrainedWidth = true"
+        android:textAllCaps="false"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMinWidth"
+        app:layout_constraintWidth_min="300dp" />
+
+    <Button
+        android:id="@+id/btnConWidFalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="constrainedWidth = false"
+        android:textAllCaps="false"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnConWidTrue"
+        app:layout_constraintWidth_min="300dp" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="宽60%高30%布局"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnConWidFalse"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.6" />
+
+
+</android.support.constraint.ConstraintLayout>

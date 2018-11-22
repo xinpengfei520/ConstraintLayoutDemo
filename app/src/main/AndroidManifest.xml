@@ -16,11 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RelativeLocationActivity" />
-        <activity android:name=".CenterLocationActivity" />
+        <activity android:name=".activity.RelativeLocationActivity" />
+        <activity android:name=".activity.CenterLocationActivity" />
         <activity
-            android:name=".MarginPropertyActivity"
+            android:name=".activity.MarginPropertyActivity"
             android:label="@string/title_activity_margin_property"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.BiasActivity" />
+        <activity
+            android:name=".activity.SizeActivity"
+            android:label="@string/title_activity_size"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

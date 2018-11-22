@@ -5,6 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.xpf.constraint.activity.BiasActivity;
+import com.xpf.constraint.activity.CenterLocationActivity;
+import com.xpf.constraint.activity.MarginPropertyActivity;
+import com.xpf.constraint.activity.RelativeLocationActivity;
+import com.xpf.constraint.activity.SizeActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -28,6 +34,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(MarginPropertyActivity.class);
+            }
+        });
+        findViewById(R.id.btnSetBias).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(BiasActivity.class);
+            }
+        });
+        findViewById(R.id.btnSetSize).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(SizeActivity.class);
             }
         });
     }

@@ -1,4 +1,4 @@
-package com.xpf.constraint;
+package com.xpf.constraint.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+
+import com.xpf.constraint.R;
 
 /**
  * 使用约束布局设置控件的边距
@@ -53,6 +55,9 @@ public class MarginPropertyActivity extends AppCompatActivity {
          * layout_goneMarginTop
          * layout_goneMarginRight
          * layout_goneMarginBottom
+         *
+         * 约束布局中：当控件设为GONE时，被认为尺寸为0。可以理解为布局上的一个点，
+         * 若GONE的控件对其它控件有约束，则约束保留并生效，但所有的边距（margin）会清零。
          *
          */
 

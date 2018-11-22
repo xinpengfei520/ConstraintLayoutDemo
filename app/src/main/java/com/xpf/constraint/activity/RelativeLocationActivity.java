@@ -1,7 +1,9 @@
-package com.xpf.constraint;
+package com.xpf.constraint.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.xpf.constraint.R;
 
 /**
  * 使用约束布局设置控件的相对位置
