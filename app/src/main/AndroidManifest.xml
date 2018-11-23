@@ -28,7 +28,8 @@
             android:label="@string/title_activity_size"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.DimensionRatioActivity" />
-        <activity android:name=".activity.ChainStyleActivity"></activity>
+        <activity android:name=".activity.ChainStyleActivity" />
+        <activity android:name=".activity.GuidelineActivity"></activity>
     </application>
 
 </manifest>

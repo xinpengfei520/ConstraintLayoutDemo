@@ -9,6 +9,7 @@ import com.xpf.constraint.activity.BiasActivity;
 import com.xpf.constraint.activity.CenterLocationActivity;
 import com.xpf.constraint.activity.ChainStyleActivity;
 import com.xpf.constraint.activity.DimensionRatioActivity;
+import com.xpf.constraint.activity.GuidelineActivity;
 import com.xpf.constraint.activity.MarginPropertyActivity;
 import com.xpf.constraint.activity.RelativeLocationActivity;
 import com.xpf.constraint.activity.SizeActivity;
@@ -66,6 +67,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(ChainStyleActivity.class);
+            }
+        });
+        findViewById(R.id.btnGuideline).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(GuidelineActivity.class);
             }
         });
     }

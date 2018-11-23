@@ -60,5 +60,13 @@
         android:text="链样式"
         app:layout_constraintTop_toBottomOf="@id/btnSetRatio" />
 
+    <Button
+        android:id="@+id/btnGuideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="辅助线"
+        app:layout_constraintTop_toBottomOf="@id/btnChainStyle" />
+
 
 </android.support.constraint.ConstraintLayout>
