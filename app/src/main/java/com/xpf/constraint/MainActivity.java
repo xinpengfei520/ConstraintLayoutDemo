@@ -8,6 +8,8 @@ import android.view.View;
 import com.xpf.constraint.activity.BiasActivity;
 import com.xpf.constraint.activity.CenterLocationActivity;
 import com.xpf.constraint.activity.ChainStyleActivity;
+import com.xpf.constraint.activity.ConstraintSetActivity;
+import com.xpf.constraint.activity.ConstraintSetExtendActivity;
 import com.xpf.constraint.activity.DimensionRatioActivity;
 import com.xpf.constraint.activity.GuidelineActivity;
 import com.xpf.constraint.activity.MarginPropertyActivity;
@@ -73,6 +75,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(GuidelineActivity.class);
+            }
+        });
+        findViewById(R.id.btnConSet).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(ConstraintSetActivity.class);
+            }
+        });
+        findViewById(R.id.btnConSetExd).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(ConstraintSetExtendActivity.class);
             }
         });
     }

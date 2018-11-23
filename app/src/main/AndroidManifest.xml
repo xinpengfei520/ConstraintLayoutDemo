@@ -29,7 +29,9 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.DimensionRatioActivity" />
         <activity android:name=".activity.ChainStyleActivity" />
-        <activity android:name=".activity.GuidelineActivity"></activity>
+        <activity android:name=".activity.GuidelineActivity" />
+        <activity android:name=".activity.ConstraintSetActivity" />
+        <activity android:name=".activity.ConstraintSetExtendActivity"></activity>
     </application>
 
 </manifest>
