@@ -26,7 +26,7 @@ public class GuidelineActivity extends AppCompatActivity {
          * 2.给定距离右边或底部一个固定距离（layout_constraintGuide_end）
          * 3.给定宽高一个百分比距离（layout_constraintGuide_percent）
          *
-         * 注：begin & end 只能使用一个
+         * 注：begin & end 只能使用一个，Guideline 设置相对位置属性是不生效，这时候需要自定义 Guideline
          */
     }
 }

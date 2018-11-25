@@ -31,7 +31,10 @@
         <activity android:name=".activity.ChainStyleActivity" />
         <activity android:name=".activity.GuidelineActivity" />
         <activity android:name=".activity.ConstraintSetActivity" />
-        <activity android:name=".activity.ConstraintSetExtendActivity"></activity>
+        <activity android:name=".activity.ConstraintSetExtendActivity" />
+        <activity android:name=".activity.ConstraintExerciseActivity" />
+        <activity android:name=".activity.ConstraintExercise2Activity" />
+        <activity android:name=".activity.ConstraintExercise3Activity"></activity>
     </application>
 
 </manifest>

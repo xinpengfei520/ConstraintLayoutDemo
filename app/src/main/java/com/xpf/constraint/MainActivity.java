@@ -1,13 +1,16 @@
 package com.xpf.constraint;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.xpf.constraint.activity.BiasActivity;
 import com.xpf.constraint.activity.CenterLocationActivity;
 import com.xpf.constraint.activity.ChainStyleActivity;
+import com.xpf.constraint.activity.ConstraintExercise2Activity;
+import com.xpf.constraint.activity.ConstraintExercise3Activity;
+import com.xpf.constraint.activity.ConstraintExerciseActivity;
 import com.xpf.constraint.activity.ConstraintSetActivity;
 import com.xpf.constraint.activity.ConstraintSetExtendActivity;
 import com.xpf.constraint.activity.DimensionRatioActivity;
@@ -89,8 +92,25 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(ConstraintSetExtendActivity.class);
             }
         });
+        findViewById(R.id.btnConsExe).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(ConstraintExerciseActivity.class);
+            }
+        });
+        findViewById(R.id.btnConsExe2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(ConstraintExercise2Activity.class);
+            }
+        });
+        findViewById(R.id.btnConsExe3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(ConstraintExercise3Activity.class);
+            }
+        });
     }
-
 
     private void startActivity(Class<?> clazz) {
         Intent intent = new Intent(MainActivity.this, clazz);

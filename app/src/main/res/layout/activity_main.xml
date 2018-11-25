@@ -6,85 +6,126 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnSetRelative"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="设置相对位置" />
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/btnSetCenter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="设置居中"
-        app:layout_constraintTop_toBottomOf="@id/btnSetRelative" />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/btnSetMargin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="设置边距"
-        app:layout_constraintTop_toBottomOf="@id/btnSetCenter" />
+            <Button
+                android:id="@+id/btnSetRelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设置相对位置" />
 
-    <Button
-        android:id="@+id/btnSetBias"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="设置偏移量"
-        app:layout_constraintTop_toBottomOf="@id/btnSetMargin" />
+            <Button
+                android:id="@+id/btnSetCenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="设置居中"
+                app:layout_constraintTop_toBottomOf="@id/btnSetRelative" />
 
-    <Button
-        android:id="@+id/btnSetSize"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="设置尺寸"
-        app:layout_constraintTop_toBottomOf="@id/btnSetBias" />
+            <Button
+                android:id="@+id/btnSetMargin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="设置边距"
+                app:layout_constraintTop_toBottomOf="@id/btnSetCenter" />
 
-    <Button
-        android:id="@+id/btnSetRatio"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="设置比例"
-        app:layout_constraintTop_toBottomOf="@id/btnSetSize" />
+            <Button
+                android:id="@+id/btnSetBias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="设置偏移量"
+                app:layout_constraintTop_toBottomOf="@id/btnSetMargin" />
 
-    <Button
-        android:id="@+id/btnChainStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="链样式"
-        app:layout_constraintTop_toBottomOf="@id/btnSetRatio" />
+            <Button
+                android:id="@+id/btnSetSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="设置尺寸"
+                app:layout_constraintTop_toBottomOf="@id/btnSetBias" />
 
-    <Button
-        android:id="@+id/btnGuideline"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="辅助线"
-        app:layout_constraintTop_toBottomOf="@id/btnChainStyle" />
+            <Button
+                android:id="@+id/btnSetRatio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="设置比例"
+                app:layout_constraintTop_toBottomOf="@id/btnSetSize" />
 
-    <Button
-        android:id="@+id/btnConSet"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="ConstraintSet"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@id/btnGuideline" />
+            <Button
+                android:id="@+id/btnChainStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="链样式"
+                app:layout_constraintTop_toBottomOf="@id/btnSetRatio" />
 
-    <Button
-        android:id="@+id/btnConSetExd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="ConstraintSetExtend"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@id/btnConSet" />
+            <Button
+                android:id="@+id/btnGuideline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="辅助线"
+                app:layout_constraintTop_toBottomOf="@id/btnChainStyle" />
+
+            <Button
+                android:id="@+id/btnConSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="ConstraintSet"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/btnGuideline" />
+
+            <Button
+                android:id="@+id/btnConSetExd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="ConstraintSetExtend"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/btnConSet" />
+
+            <Button
+                android:id="@+id/btnConsExe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="ConstraintExercise"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/btnConSetExd" />
+
+            <Button
+                android:id="@+id/btnConsExe2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="ConstraintExercise2"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/btnConsExe" />
+
+            <Button
+                android:id="@+id/btnConsExe3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="ConstraintExercise3"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/btnConsExe2" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
 
 
 </android.support.constraint.ConstraintLayout>
