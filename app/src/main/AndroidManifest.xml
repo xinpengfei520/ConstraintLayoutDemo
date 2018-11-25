@@ -34,7 +34,9 @@
         <activity android:name=".activity.ConstraintSetExtendActivity" />
         <activity android:name=".activity.ConstraintExerciseActivity" />
         <activity android:name=".activity.ConstraintExercise2Activity" />
-        <activity android:name=".activity.ConstraintExercise3Activity"></activity>
+        <activity android:name=".activity.ConstraintExercise3Activity" />
+        <activity android:name=".activity.CircularPositionActivity" />
+        <activity android:name=".activity.GroupActivity"></activity>
     </application>
 
 </manifest>

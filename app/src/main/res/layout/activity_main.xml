@@ -124,6 +124,24 @@
                 android:text="ConstraintExercise3"
                 android:textAllCaps="false"
                 app:layout_constraintTop_toBottomOf="@id/btnConsExe2" />
+
+            <Button
+                android:id="@+id/btnCircularPos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="CircularPosition"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/btnConsExe3" />
+
+            <Button
+                android:id="@+id/btnGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Group"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/btnCircularPos" />
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 

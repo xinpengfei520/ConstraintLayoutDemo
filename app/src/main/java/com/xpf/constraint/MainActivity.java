@@ -8,12 +8,14 @@ import android.view.View;
 import com.xpf.constraint.activity.BiasActivity;
 import com.xpf.constraint.activity.CenterLocationActivity;
 import com.xpf.constraint.activity.ChainStyleActivity;
+import com.xpf.constraint.activity.CircularPositionActivity;
 import com.xpf.constraint.activity.ConstraintExercise2Activity;
 import com.xpf.constraint.activity.ConstraintExercise3Activity;
 import com.xpf.constraint.activity.ConstraintExerciseActivity;
 import com.xpf.constraint.activity.ConstraintSetActivity;
 import com.xpf.constraint.activity.ConstraintSetExtendActivity;
 import com.xpf.constraint.activity.DimensionRatioActivity;
+import com.xpf.constraint.activity.GroupActivity;
 import com.xpf.constraint.activity.GuidelineActivity;
 import com.xpf.constraint.activity.MarginPropertyActivity;
 import com.xpf.constraint.activity.RelativeLocationActivity;
@@ -108,6 +110,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(ConstraintExercise3Activity.class);
+            }
+        });
+        findViewById(R.id.btnCircularPos).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(CircularPositionActivity.class);
+            }
+        });
+        findViewById(R.id.btnGroup).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(GroupActivity.class);
             }
         });
     }
