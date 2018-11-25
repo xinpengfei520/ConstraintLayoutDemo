@@ -18,6 +18,7 @@ import com.xpf.constraint.activity.DimensionRatioActivity;
 import com.xpf.constraint.activity.GroupActivity;
 import com.xpf.constraint.activity.GuidelineActivity;
 import com.xpf.constraint.activity.MarginPropertyActivity;
+import com.xpf.constraint.activity.PlaceholderActivity;
 import com.xpf.constraint.activity.RelativeLocationActivity;
 import com.xpf.constraint.activity.SizeActivity;
 
@@ -122,6 +123,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(GroupActivity.class);
+            }
+        });
+        findViewById(R.id.btnPlaceholder).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(PlaceholderActivity.class);
             }
         });
     }

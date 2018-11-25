@@ -36,7 +36,8 @@
         <activity android:name=".activity.ConstraintExercise2Activity" />
         <activity android:name=".activity.ConstraintExercise3Activity" />
         <activity android:name=".activity.CircularPositionActivity" />
-        <activity android:name=".activity.GroupActivity"></activity>
+        <activity android:name=".activity.GroupActivity" />
+        <activity android:name=".activity.PlaceholderActivity"></activity>
     </application>
 
 </manifest>
