@@ -31,7 +31,7 @@ Android 约束布局练习，从此，再复杂的布局也能轻松应对了！
 
 [https://developer.android.com/reference/android/support/constraint/ConstraintLayout](https://developer.android.com/reference/android/support/constraint/ConstraintLayout)
 
-## TODO
+## Group & Circular(new api)
 
 - Group
 Group帮助你对一组控件进行设置。最常见的情况是控制一组控件的visibility。你只需把控件的id添加到Group，就能同时对里面的所有控件进行操作。
